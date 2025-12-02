@@ -1,0 +1,45 @@
+{
+  "site": "PeakInspire",
+  "base_url": "https://peakinspire.com",
+  "last_updated": "2025-12-02",
+  "categories": {
+    "health": {
+      "name": "Health & Vitality",
+      "subdomain": "health.peakinspire.com",
+      "description": "Joint pain, anti-aging, nutrition journey",
+      "posts": []
+    },
+    "fitness": {
+      "name": "Fitness After 50",
+      "subdomain": "fitness.peakinspire.com",
+      "description": "Middle-age fitness experiments",
+      "posts": []
+    },
+    "wealth": {
+      "name": "Building Wealth",
+      "subdomain": "wealth.peakinspire.com",
+      "description": "Financial recovery after losing everything at 55",
+      "posts": []
+    },
+    "clarity": {
+      "name": "Mental Clarity",
+      "subdomain": "clarity.peakinspire.com",
+      "description": "Focus, happiness, mindfulness practices",
+      "posts": []
+    },
+    "local": {
+      "name": "Local Living",
+      "subdomain": "local.peakinspire.com",
+      "description": "Melbourne walks, hidden gems, local discoveries",
+      "posts": []
+    },
+    "systems": {
+      "name": "Life Systems",
+      "subdomain": "systems.peakinspire.com",
+      "description": "Productivity tools, automation experiments",
+      "posts": []
+    }
+  },
+  "internal_links": {},
+  "keywords_used": []
+}

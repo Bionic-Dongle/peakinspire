@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://peakinspire.com/sitemap.xml
+
+# Block admin/test pages if any exist
+Disallow: /test-
+Disallow: /admin/
+Disallow: /draft/
