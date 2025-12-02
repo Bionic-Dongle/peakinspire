@@ -1,0 +1,101 @@
+The Real Setup (Not WordPress Themes!)
+Your HTML Templates = Static Sites
+
+Hub site: Pure HTML/CSS (what we built)
+Subdomains: Your pamphlet templates (also pure HTML/CSS)
+WordPress: ONLY as a content management backend
+ZimmWriter: Feeds content TO WordPress
+Automation: Pulls content FROM WordPress, injects into your HTML templates
+
+The Workflow:
+
+ZimmWriter creates content → WordPress (headless CMS)
+Automation pulls from WordPress API → Your HTML templates
+Deploy static HTML files to hosting
+Zero WordPress themes involved!
+
+You keep your beautiful design, WordPress just stores the content.
+
+Automation Roadmap - Everything Mappable:
+Content Creation (ZimmWriter)
+Personal Mode:
+
+Weekly journey updates
+Product testing logs
+Melbourne discoveries
+Health experiments
+
+Generic Mode:
+
+SEO-optimized reviews
+Buying guides
+Comparison articles
+Seasonal content
+
+Content Distribution Chain:
+
+ZimmWriter → WordPress API (content storage)
+WordPress API → HTML template injection
+Static files → Hosting deployment
+Same content → YouTube script
+Same content → Pinterest descriptions
+Same content → Email newsletter
+
+What Can Be Automated:
+
+Content generation (ZimmWriter)
+Template population (API calls)
+File deployment (Git/FTP)
+Social media posting (Buffer)
+Email campaigns (Mailchimp)
+SEO optimization (meta tags, schemas)
+Image optimization
+Affiliate link management
+
+Question: Should I map out the exact technical workflow for ZimmWriter → WordPress API → Your HTML templates? That's the missing piece you need before Monday.
+The key is: Your design stays pure, WordPress just becomes a content database.
+
+Headless WordPress Plugin Advantages:
+Content Management Plugins:
+
+ACF (Advanced Custom Fields): Perfect for your review templates (rating fields, price fields, pros/cons)
+Yoast SEO: Handles meta tags, schema markup via API
+WP All Import: Bulk import content from ZimmWriter
+
+Functionality Plugins:
+
+WP Maps: Google Maps integration via API
+Gravity Forms: Advanced forms (exposed via API)
+WooCommerce: If you want to sell your own products later
+Custom Post Types: Organize reviews, journey posts, local guides separately
+
+Your Workflow with Headless + Plugins:
+
+ZimmWriter creates content → WordPress admin
+ACF fields capture structured data (ratings, prices, affiliate links)
+Plugins process (SEO optimization, maps, etc.)
+WordPress REST API outputs clean JSON
+Your automation grabs JSON → injects into your HTML templates
+Deploy static HTML files
+
+Best of Both Worlds:
+
+Your beautiful HTML design (no WordPress themes)
+WordPress power (plugins, user management, content organization)
+Plugin ecosystem (maps, forms, SEO tools)
+Static site speed (final output is HTML/CSS/JS)
+
+Technical Setup:
+
+WordPress install (backend only)
+REST API enabled
+CORS headers for your domain
+Authentication for content management
+
+Want me to outline the exact technical implementation for:
+
+WordPress headless setup
+Content API structure for your templates
+ZimmWriter → WordPress integration
+
+This is the sweet spot - plugin power without theme hell!

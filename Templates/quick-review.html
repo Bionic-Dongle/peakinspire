@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[PRODUCT NAME] - Honest review and buying guide. Peak performance insights for smart decisions.">
+    <title>[PRODUCT NAME] Review | PeakInspire</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    
+    <!-- Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Variables for Consistent Branding */
+        :root {
+            --peak-navy: #1a365d;
+            --peak-blue: #2b77ad;
+            --peak-light-blue: #4a9eff;
+            --peak-orange: #ff6b35;
+            --peak-warm-orange: #ff8c42;
+            --peak-white: #ffffff;
+            --peak-light-gray: #f7fafc;
+            --peak-gray: #e2e8f0;
+            --peak-dark-gray: #4a5568;
+            --peak-text: #2d3748;
+            
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.15);
+            --shadow-strong: 0 8px 30px rgba(0, 0, 0, 0.12);
+            
+            --border-radius: 8px;
+            --border-radius-large: 16px;
+        }
+        
+        /* Reset and Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--peak-text);
+            background: linear-gradient(135deg, var(--peak-light-gray) 0%, var(--peak-white) 100%);
+            font-size: 16px;
+        }
+        
+        /* Pamphlet Container */
+        .pamphlet {
+            max-width: 900px;
+            margin: 20px auto;
+            background: var(--peak-white);
+            border-radius: var(--border-radius-large);
+            box-shadow: var(--shadow-strong);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .pamphlet::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--peak-orange) 0%, var(--peak-light-blue) 100%);
+        }
+        
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, var(--peak-navy) 0%, var(--peak-blue) 100%);
+            color: var(--peak-white);
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .brand-logo {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .brand-logo::before {
+            content: '▲';
+            margin-right: 8px;
+            color: var(--peak-orange);
+        }
+        
+        .headline {
+            font-size: 2.2em;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+        
+        .subheadline {
+            font-size: 1.1em;
+            font-weight: 400;
+            opacity: 0.95;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        /* Hero Product Section */
+        .hero-product {
+            padding: 40px 30px;
+            text-align: center;
+            background: var(--peak-white);
+        }
+        
+        .product-image-container {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .product-image {
+            max-width: 100%;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .quick-verdict {
+            background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
+            border: 2px solid #48bb78;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .verdict-rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .stars {
+            color: #fbbf24;
+            font-size: 1.4em;
+            letter-spacing: 2px;
+        }
+        
+        .rating-score {
+            font-weight: 700;
+            color: #065f46;
+            font-size: 1.2em;
+        }
+        
+        .verdict-text {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #065f46;
+            line-height: 1.4;
+        }
+        
+        /* Key Points Section */
+        .key-points {
+            padding: 40px 30px;
+            background: var(--peak-light-gray);
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--peak-navy);
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--peak-orange);
+            border-radius: 2px;
+        }
+        
+        .points-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .point-card {
+            background: var(--peak-white);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-subtle);
+            border-left: 4px solid var(--peak-light-blue);
+        }
+        
+        .point-icon {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .point-title {
+            font-weight: 600;
+            color: var(--peak-navy);
+            margin-bottom: 8px;
+        }
+        
+        .point-text {
+            font-size: 0.95em;
+            color: var(--peak-dark-gray);
+            line-height: 1.5;
+        }
+        
+        /* Price Section */
+        .price-section {
+            background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 20%, #fff7ed 100%);
+            padding: 35px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .price-tag {
+            display: inline-block;
+            background: var(--peak-white);
+            padding: 20px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-medium);
+            margin-bottom: 20px;
+        }
+        
+        .price-label {
+            font-size: 0.9em;
+            color: var(--peak-dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .price-current {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--peak-navy);
+            line-height: 1;
+        }
+        
+        .price-note {
+            font-size: 0.9em;
+            color: var(--peak-dark-gray);
+            margin-top: 5px;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            padding: 40px 30px;
+            background: var(--peak-white);
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--peak-navy);
+            margin-bottom: 15px;
+        }
+        
+        .cta-subtitle {
+            color: var(--peak-dark-gray);
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--peak-orange) 0%, var(--peak-warm-orange) 100%);
+            color: var(--peak-white);
+            font-size: 1.2em;
+            font-weight: 600;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.4);
+        }
+        
+        .cta-button:active {
+            transform: translateY(0);
+        }
+        
+        .trust-signals {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: var(--peak-dark-gray);
+        }
+        
+        .trust-signal {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Bottom Section */
+        .bottom-info {
+            background: var(--peak-light-gray);
+            padding: 30px;
+            border-top: 1px solid var(--peak-gray);
+        }
+        
+        .quick-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .spec-item {
+            text-align: center;
+            padding: 15px;
+            background: var(--peak-white);
+            border-radius: var(--border-radius);
+        }
+        
+        .spec-label {
+            font-size: 0.85em;
+            color: var(--peak-dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .spec-value {
+            font-weight: 600;
+            color: var(--peak-navy);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--peak-navy);
+            color: var(--peak-white);
+            padding: 25px 30px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        .footer-brand {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .footer-tagline {
+            opacity: 0.8;
+            font-style: italic;
+        }
+        
+        .disclaimer {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.8em;
+            opacity: 0.7;
+            line-height: 1.4;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .pamphlet {
+                margin: 10px;
+                border-radius: var(--border-radius);
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .headline {
+                font-size: 1.8em;
+            }
+            
+            .hero-product, .key-points, .price-section, .cta-section {
+                padding: 30px 20px;
+            }
+            
+            .points-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .trust-signals {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .quick-specs {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .cta-section, .footer {
+                display: none;
+            }
+            
+            .pamphlet {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+        
+        /* Accessibility */
+        .cta-button:focus {
+            outline: 3px solid var(--peak-light-blue);
+            outline-offset: 2px;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="pamphlet">
+        <!-- Header -->
+        <header class="header">
+            <div class="brand-logo">PeakInspire</div>
+            <h1 class="headline">[PRODUCT NAME] Review</h1>
+            <p class="subheadline">Honest insights to elevate your [category] game</p>
+        </header>
+        
+        <!-- Hero Product -->
+        <section class="hero-product">
+            <div class="product-image-container">
+                <img src="https://via.placeholder.com/400x300/2b77ad/ffffff?text=Product+Hero+Shot" 
+                     alt="[PRODUCT NAME]" 
+                     class="product-image">
+            </div>
+            
+            <div class="quick-verdict">
+                <div class="verdict-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="rating-score">4.2/5</span>
+                </div>
+                <div class="verdict-text">
+                    [Write your one-sentence verdict here - be bold and definitive]
+                </div>
+            </div>
+        </section>
+        
+        <!-- Key Points -->
+        <section class="key-points">
+            <h2 class="section-title">What You Need to Know</h2>
+            
+            <div class="points-grid">
+                <div class="point-card">
+                    <span class="point-icon">⚡</span>
+                    <h3 class="point-title">Performance</h3>
+                    <p class="point-text">[How well does it actually work? Be specific.]</p>
+                </div>
+                
+                <div class="point-card">
+                    <span class="point-icon">💰</span>
+                    <h3 class="point-title">Value</h3>
+                    <p class="point-text">[Is it worth the money? Compare to alternatives.]</p>
+                </div>
+                
+                <div class="point-card">
+                    <span class="point-icon">🎯</span>
+                    <h3 class="point-title">Best For</h3>
+                    <p class="point-text">[Who should buy this? Be specific about use cases.]</p>
+                </div>
+                
+                <div class="point-card">
+                    <span class="point-icon">⚠️</span>
+                    <h3 class="point-title">Watch Out</h3>
+                    <p class="point-text">[Any downsides or limitations to be aware of?]</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Price -->
+        <section class="price-section">
+            <div class="price-tag">
+                <div class="price-label">Current Best Price</div>
+                <div class="price-current">$XXX</div>
+                <div class="price-note">Free shipping to Australia</div>
+            </div>
+            <p>Price checked: [DATE] | Available while stocks last</p>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h2 class="cta-title">Ready to Upgrade?</h2>
+            <p class="cta-subtitle">Get the best current deal from our trusted partner</p>
+            
+            <a href="[AFFILIATE-LINK]" class="cta-button" rel="nofollow sponsored">
+                Get Best Price
+            </a>
+            
+            <div class="trust-signals">
+                <div class="trust-signal">
+                    <span>✓</span>
+                    <span>Money-back guarantee</span>
+                </div>
+                <div class="trust-signal">
+                    <span>✓</span>
+                    <span>Free Australian shipping</span>
+                </div>
+                <div class="trust-signal">
+                    <span>✓</span>
+                    <span>Secure checkout</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bottom Info -->
+        <section class="bottom-info">
+            <div class="quick-specs">
+                <div class="spec-item">
+                    <div class="spec-label">Category</div>
+                    <div class="spec-value">[Product Category]</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Best Feature</div>
+                    <div class="spec-value">[Key Selling Point]</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">Tested</div>
+                    <div class="spec-value">[Test Period]</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-brand">PeakInspire</div>
+            <div class="footer-tagline">"Elevating your choices, one review at a time"</div>
+            
+            <div class="disclaimer">
+                <strong>Disclosure:</strong> This review contains affiliate links. We may earn a commission if you purchase through our links, at no extra cost to you. This supports our independent testing and honest reviews.
+            </div>
+        </footer>
+    </article>
+</body>
+</html>

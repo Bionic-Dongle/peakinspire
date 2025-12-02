@@ -1,0 +1,54 @@
+# CSS Extraction Task - Context Prompt
+
+## Project Context
+**PeakInspire Affiliate Website System**
+- Personal journey-based affiliate marketing hub
+- Hub site (peakinspire.com) + category subdomains
+- Australian/Melbourne focus, middle-age health/wealth journey
+- Launch target: Monday (going back to work)
+
+## Current Status
+- Built hub-site.html with inline CSS (working)
+- Built pamphlet-review.html template with inline CSS (working)
+- Color palette: Warm greens, gold, charcoal (established)
+- Dark/light mode toggle (working)
+- File structure: Templates/ folder with Images/, Instructions-notes/
+
+## Specific Task: CSS Extraction & Template System
+**Goal:** Extract inline CSS into proper external files with template-able HTML structure
+
+### What Needs to Be Done:
+1. **Extract shared styles** into global.css (colors, fonts, layout, components)
+2. **Extract specific styles** into individual CSS files (hub-site.css, pamphlet.css)
+3. **Clean HTML files** - remove all inline <style> blocks
+4. **Create template head structure** - standardized <head> section for linking CSS
+5. **Ensure responsive/mobile** functionality still works
+6. **Test dark/light mode** toggle still functions
+
+### Files to Work With:
+- **hub-site.html** (main homepage with 6 categories)
+- **pamphlet-review.html** (product review template)
+- Both have extensive inline CSS that needs extraction
+
+### Key Requirements:
+- **Maintain exact visual appearance** - no design changes
+- **Keep all functionality** - dark mode, smooth scrolling, responsive
+- **Professional structure** - external CSS, clean HTML
+- **Easy maintenance** - change colors in one place
+- **Template-ready** - standardized head section for future pages
+
+### Brand Standards:
+- **Colors:** Deep green (#2d5a27), gold (#b8860b), charcoal (#2c2c2c)
+- **Font:** Inter (Google Fonts)
+- **Logo:** Triangle (▲) + "PeakInspire"
+- **Mobile-first** responsive design
+- **Dark mode** capability
+
+### Success Criteria:
+- External CSS files created and properly organized
+- HTML files cleaned of inline styles
+- Visual appearance identical to current
+- All interactive features working
+- Template head structure ready for replication
+
+This task sets up the foundation for rapid template deployment across all PeakInspire subdomains.

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join my local living journey - Melbourne walks, hidden gems, and local discoveries. Exploring our backyard together.">
+    <title>Local Living - Exploring Melbourne and Hidden Gems | PeakInspire</title>
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="Hub-Site.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">▲</div>
+                <span>PeakInspire</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#explorations">My Explorations</a></li>
+                <li><a href="#guides">Local Guides</a></li>
+                <li><a href="#gems">Hidden Gems</a></li>
+                <li><a href="#walks">Walking Routes</a></li>
+                <li><a href="#spots">Best Spots</a></li>
+            </ul>
+
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <span class="theme-icon active" id="light-icon">☀️</span>
+                <span class="theme-icon" id="dark-icon">🌙</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">My Local Living Journey</h1>
+            <p class="hero-subtitle">
+                Join me as I explore Melbourne's hidden gems, discover local walks, and uncover the best our city has to offer. Real discoveries in our own backyard.
+            </p>
+
+            <div class="journey-stats">
+                <div class="stat">
+                    <span class="stat-number">47</span>
+                    <span class="stat-label">Local Spots Discovered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Months Exploring</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">23</span>
+                    <span class="stat-label">Hidden Gems Found</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Featured Journey Update -->
+        <section class="section">
+            <div class="featured-update">
+                <div class="update-meta">
+                    <span class="update-date">Week 24</span>
+                    <span class="update-type">Local Discovery</span>
+                    <span>Secret Garden Revelation</span>
+                </div>
+                <h2 class="update-title">The Forgotten Garden: Melbourne's Best-Kept Secret</h2>
+                <p class="update-excerpt">
+                    After 6 months of methodical exploration, I stumbled upon what might be Melbourne's most beautiful hidden garden. No crowds, perfect for quiet reflection and nature immersion.
+                </p>
+                <a href="/explorations/week-24-secret-garden" class="read-more">
+                    Read Full Update →
+                </a>
+            </div>
+        </section>
+
+        <!-- Latest Reviews & Content -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Latest Local Living Reviews</h2>
+                <p class="section-subtitle">
+                    Honest reviews of Melbourne spots, local experiences, and hidden gems I'm personally discovering and testing
+                </p>
+            </div>
+
+            <div class="content-grid">
+                <article class="content-card">
+                    <div class="card-image">
+                        ☕
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">Café Discovery</div>
+                        <h3 class="card-title">The Tiny Bookstore Café - 3 Month Regular</h3>
+                        <p class="card-excerpt">
+                            Melbourne's smallest café tucked away in a bookstore. After 12 weeks of weekly visits, here's why it's become my go-to spot for work and relaxation.
+                        </p>
+                        <div class="card-meta">
+                            <div class="card-rating">
+                                <span>★★★★★</span>
+                                <span>5.0/5</span>
+                            </div>
+                            <div class="card-date">Sep 15, 2025</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card">
+                    <div class="card-image">
+                        🏞️
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">Urban Park</div>
+                        <h3 class="card-title">Royal Park Dawn Walks - Seasonal Review</h3>
+                        <p class="card-excerpt">
+                            Testing Melbourne's largest park at different times of day. Tracking wildlife sightings, crowd levels, and the best photography spots throughout the seasons.
+                        </p>
+                        <div class="card-meta">
+                            <div class="card-rating">
+                                <span>★★★★☆</span>
+                                <span>4.7/5</span>
+                            </div>
+                            <div class="card-date">Sep 12, 2025</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="content-card">
+                    <div class="card-image">
+                        🛍️
+                    </div>
+                    <div class="card-content">
+                        <div class="card-category">Local Shopping</div>
+                        <h3 class="card-title">Brunswick Street Markets - Saturday Morning Ritual</h3>
+                        <p class="card-excerpt">
+                            Melbourne's iconic market street on weekends. Tracking the best times to visit, vendor quality consistency, and hidden food stalls over 8 months.
+                        </p>
+                        <div class="card-meta">
+                            <div class="card-rating">
+                                <span>★★★★☆</span>
+                                <span>4.3/5</span>
+                            </div>
+                            <div class="card-date">Sep 8, 2025</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="section">
+            <div class="quick-actions">
+                <h2 class="actions-title">Start Your Local Exploration</h2>
+                <p>Ready to discover Melbourne's hidden treasures? Here's how to get started:</p>
+
+                <div class="actions-grid">
+                    <a href="/explorations/getting-started" class="action-btn primary">
+                        <strong>🗺️ Start Here</strong><br>
+                        My exploration guide
+                    </a>
+                    <a href="/newsletter" class="action-btn">
+                        <strong>📧 Weekly Discoveries</strong><br>
+                        Join my adventures
+                    </a>
+                    <a href="/gems/essentials" class="action-btn">
+                        <strong>🎯 Hidden Gems</strong><br>
+                        My top finds
+                    </a>
+                    <a href="/walks/beginner" class="action-btn">
+                        <strong>📖 Local Living Guide</strong><br>
+                        Complete exploration guide
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Explore Other Peak Categories</h3>
+                <div class="other-categories">
+                    <a href="Health-and-Vitality.html" class="other-category">
+                        <span>💪</span>
+                        <span>Health & Vitality</span>
+                    </a>
+                    <a href="Fitness-After-50.html" class="other-category">
+                        <span>🏋️</span>
+                        <span>Fitness After 50</span>
+                    </a>
+                    <a href="Mental-Clarity.html" class="other-category">
+                        <span>🧠</span>
+                        <span>Mental Clarity</span>
+                    </a>
+                    <a href="Building-Wealth.html" class="other-category">
+                        <span>💰</span>
+                        <span>Building Wealth</span>
+                    </a>
+                    <a href="Life-Systems.html" class="other-category">
+                        <span>⚙️</span>
+                        <span>Life Systems</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 PeakInspire - Local Living. Part of the PeakInspire network.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+           function toggleTheme() {
+            const body = document.body;
+            const lightIcon = document.getElementById('light-icon');
+            const darkIcon = document.getElementById('dark-icon');
+
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                lightIcon.classList.add('active');
+                darkIcon.classList.remove('active');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                darkIcon.classList.add('active');
+                lightIcon.classList.remove('active');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const lightIcon = document.getElementById('light-icon');
+            const darkIcon = document.getElementById('dark-icon');
+
+            if (savedTheme === 'dark') {
+                document.body.setAttribute('data-theme', 'dark');
+                darkIcon.classList.add('active');
+                lightIcon.classList.remove('active');
+           }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up
+                header.style.transform = 'translateY(0)';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>

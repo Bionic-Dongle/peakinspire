@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PeakInspire - Elevating your choices with honest product reviews and buying guides. Find the best gear, tech, and lifestyle products tested by real people.">
+    <title>PeakInspire - Elevate Your Choices</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    
+    <!-- Preload Critical Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="Hub-Site.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">▲</div>
+                <span>PeakInspire</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#reviews">Latest Reviews</a></li>
+                <li><a href="/buying-guides">Buying Guides</a></li>
+                <li><a href="/best-of">Best Of</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+            
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <span class="theme-icon active" id="light-icon">☀️</span>
+                <span class="theme-icon" id="dark-icon">🌙</span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">Elevate Your Choices</h1>
+            <p class="hero-subtitle">
+                Honest product reviews and buying guides to help you find the best gear, tech, and lifestyle products. 
+                No fluff, just peak performance insights.
+            </p>
+            <div class="hero-cta">
+                <a href="#categories" class="btn btn-primary">Explore Reviews</a>
+                <a href="/newsletter" class="btn btn-secondary">Get Peak Picks</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Find Your Peak</h2>
+            <p class="section-subtitle">
+                Explore our carefully curated categories, each packed with honest reviews and expert recommendations
+            </p>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">💪</div>
+                    <h3 class="category-title">Health & Vitality</h3>
+                    <p class="category-description">
+                        Joint pain solutions, anti-aging strategies, and nutrition for staying young - my real journey
+                    </p>
+                    <a href="Health-and-Vitality.html" class="category-link">
+                        Join My Health Journey →
+                    </a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🏋️</div>
+                    <h3 class="category-title">Fitness After 50</h3>
+                    <p class="category-description">
+                        Middle-age fitness that actually works - equipment, routines, and honest progress updates
+                    </p>
+                    <a href="Fitness-After-50.html" class="category-link">
+                        Start Training Smarter →
+                    </a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🧠</div>
+                    <h3 class="category-title">Mental Clarity</h3>
+                    <p class="category-description">
+                        Focus, happiness, and finding peace - tools and practices for clarity in a chaotic world
+                    </p>
+                    <a href="Mental-Clarity.html" class="category-link">
+                        Clear The Mental Fog →
+                    </a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">💰</div>
+                    <h3 class="category-title">Building Wealth</h3>
+                    <p class="category-description">
+                        My journey back from losing everything - passive income experiments and financial recovery
+                    </p>
+                    <a href="Building-Wealth.html" class="category-link">
+                        Rebuild With Me →
+                    </a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">🏞️</div>
+                    <h3 class="category-title">Local Living</h3>
+                    <p class="category-description">
+                        Melbourne walks, hidden gems, and local discoveries - exploring our backyard together
+                    </p>
+                    <a href="Local-Living.html" class="category-link">
+                        Explore Melbourne →
+                    </a>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">⚙️</div>
+                    <h3 class="category-title">Life Systems</h3>
+                    <p class="category-description">
+                        Productivity tools, automation experiments, and building processes that actually work
+                    </p>
+                    <a href="Life-Systems.html" class="category-link">
+                        Optimize Life →
+                    </a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="/all-categories" class="category-link" style="font-size: 1.1em;">
+                    View All Categories & Topics →
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Latest Reviews -->
+    <section class="latest-reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Latest Peak Reviews</h2>
+            <p class="section-subtitle">
+                Fresh insights on the newest products worth your attention
+            </p>
+            
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-image">🎧</div>
+                    <div class="review-content">
+                        <h3 class="review-title">Sony WH-1000XM5 Review</h3>
+                        <p class="review-excerpt">
+                            Are these premium headphones worth the investment? Our 30-day test reveals the truth about battery life, comfort, and that famous noise cancellation.
+                        </p>
+                        <div class="review-meta">
+                            <div class="review-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span>4.2/5</span>
+                            </div>
+                            <div class="review-date">Sep 15, 2025</div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="review-card">
+                    <div class="review-image">☕</div>
+                    <div class="review-content">
+                        <h3 class="review-title">Breville Bambino Plus Coffee Machine</h3>
+                        <p class="review-excerpt">
+                            This compact espresso machine promises café-quality coffee at home. After 100+ cups, here's what we learned about taste, maintenance, and value.
+                        </p>
+                        <div class="review-meta">
+                            <div class="review-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>4.8/5</span>
+                            </div>
+                            <div class="review-date">Sep 12, 2025</div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="review-card">
+                    <div class="review-image">🏃</div>
+                    <div class="review-content">
+                        <h3 class="review-title">Garmin Forerunner 965 GPS Watch</h3>
+                        <p class="review-excerpt">
+                            The ultimate running watch gets a refresh. New features, better battery, improved accuracy - but is it worth upgrading from the 955?
+                        </p>
+                        <div class="review-meta">
+                            <div class="review-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span>4.5/5</span>
+                            </div>
+                            <div class="review-date">Sep 10, 2025</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="/reviews" class="btn btn-secondary">View All Reviews</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter-title">Peak Picks Weekly</h2>
+            <p class="newsletter-subtitle">
+                Get our best product recommendations and exclusive deals delivered to your inbox every Tuesday
+            </p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-btn">Get Peak Picks</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <a href="https://tech.peakinspire.com">Tech & Gadgets</a>
+                <a href="https://home.peakinspire.com">Home & Living</a>
+                <a href="https://fitness.peakinspire.com">Health & Fitness</a>
+                <a href="https://green.peakinspire.com">Green & Natural</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="/buying-guides">Buying Guides</a>
+                <a href="/best-of">Best Of Lists</a>
+                <a href="/deals">Current Deals</a>
+                <a href="/how-we-test">How We Test</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Company</h3>
+                <a href="/about">About PeakInspire</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/disclosure">Affiliate Disclosure</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="/newsletter">Newsletter</a>
+                <a href="/rss">RSS Feed</a>
+                <a href="mailto:hello@peakinspire.com">hello@peakinspire.com</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 PeakInspire. All rights reserved. | Elevating your choices, one review at a time.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Dark Mode Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const lightIcon = document.getElementById('light-icon');
+            const darkIcon = document.getElementById('dark-icon');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                lightIcon.classList.add('active');
+                darkIcon.classList.remove('active');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                darkIcon.classList.add('active');
+                lightIcon.classList.remove('active');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+        
+        // Load saved theme
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const lightIcon = document.getElementById('light-icon');
+            const darkIcon = document.getElementById('dark-icon');
+            
+            if (savedTheme === 'dark') {
+                document.body.setAttribute('data-theme', 'dark');
+                darkIcon.classList.add('active');
+                lightIcon.classList.remove('active');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Newsletter form handling
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('.newsletter-input').value;
+            const button = this.querySelector('.newsletter-btn');
+            
+            // Simple validation
+            if (!email || !email.includes('@')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            // Update button state
+            const originalText = button.textContent;
+            button.textContent = 'Subscribing...';
+            button.disabled = true;
+            
+            // Simulate API call (replace with your actual newsletter service)
+            setTimeout(() => {
+                button.textContent = 'Subscribed! ✓';
+                button.style.background = '#4a7c59';
+                
+                // Reset after delay
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.disabled = false;
+                    button.style.background = '';
+                    this.querySelector('.newsletter-input').value = '';
+                }, 2000);
+            }, 1000);
+        });
+        
+        // Add scroll effect to header
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
