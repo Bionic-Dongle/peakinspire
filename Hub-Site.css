@@ -280,6 +280,127 @@
 }
 
 /* ========================================
+   LATEST POSTS SECTION
+======================================== */
+.latest-posts {
+    padding: 80px 20px;
+    background: var(--background);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.posts-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    padding: 30px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.post-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-green);
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.875rem;
+}
+
+.post-category {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.post-category.health { background: #e8f5e9; color: #2e7d32; }
+.post-category.fitness { background: #fff3e0; color: #e65100; }
+.post-category.wealth { background: #e3f2fd; color: #1565c0; }
+.post-category.clarity { background: #f3e5f5; color: #6a1b9a; }
+.post-category.local { background: #fff9c4; color: #f57f17; }
+.post-category.systems { background: #e0f2f1; color: #00695c; }
+
+.post-date {
+    color: var(--text-secondary);
+}
+
+.post-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.post-excerpt {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.post-link {
+    color: var(--accent-green);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.post-link:hover {
+    color: var(--accent-gold);
+}
+
+.post-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.post-item:hover .post-image img {
+    transform: scale(1.05);
+}
+
+.view-all-posts {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ========================================
    RESPONSIVE DESIGN - HUB SPECIFIC
 ======================================== */
 @media (max-width: 1024px) {
@@ -308,5 +429,220 @@
     
     .newsletter-input {
         min-width: auto;
+    }
+    
+    /* Latest Posts Mobile */
+    .post-item {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .post-image {
+        order: -1;
+        height: 180px;
+    }
+    
+    .post-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* ========================================
+   BLOG PAGE STYLES
+======================================== */
+.blog-hero {
+    padding: 100px 20px 60px;
+    text-align: center;
+    background: var(--background);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blog-hero h1 {
+    font-family: var(--font-display);
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: var(--primary-green);
+}
+
+.blog-hero p {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.filter-section {
+    padding: 40px 20px;
+    background: var(--background);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    border: 2px solid var(--primary-green);
+    background: transparent;
+    color: var(--primary-green);
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary-green);
+    color: white;
+}
+
+.posts-section {
+    padding: 60px 20px;
+    background: var(--background);
+}
+
+/* Mobile responsive for blog */
+@media (max-width: 768px) {
+    .blog-hero h1 {
+        font-size: 2em;
+    }
+    
+    .filter-buttons {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* ========================================
+   BLOG LAYOUT WITH SIDEBAR
+======================================== */
+.blog-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.blog-main {
+    min-width: 0; /* Prevents grid blowout */
+}
+
+/* Sidebar Styling */
+.blog-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.sidebar-widget {
+    background: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-family: var(--font-display);
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: var(--primary-green);
+}
+
+.sidebar-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-post {
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-post:hover {
+    background: rgba(76, 124, 89, 0.1);
+    border-left-color: var(--primary-green);
+}
+
+.sidebar-post-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sidebar-post-meta {
+    color: var(--text-secondary);
+    font-size: 0.85em;
+}
+
+.sidebar-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-category {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.sidebar-category:hover {
+    background: rgba(76, 124, 89, 0.1);
+}
+
+.category-count {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+.sidebar-ad {
+    background: #f5f5f5;
+    border: 2px dashed #ddd;
+}
+
+.ad-placeholder {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+}
+
+/* Mobile responsive blog layout */
+@media (max-width: 1024px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .blog-sidebar {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    .sidebar-widget {
+        margin-bottom: 0;
     }
 }
